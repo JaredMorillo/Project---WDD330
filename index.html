@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast</h1>
+        </div>
+
+        <div id="loading">Loading...</div>
+
+        <div class="weather-info">
+            <div class="weather-details">
+                <h2 id="location">--</h2>
+                <p class="temperature" id="temperature">-- &deg;C</p>
+                <img id="weather-icon" src="" alt="Weather Icon" style="width: 80px; height: 80px;">
+                <p id="description">--</p>
+                <p id="details">Humidity: --% | Wind: -- km/h</p>
+            </div>
+            <div class="map" id="map"></div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active">Temperature</div>
+            <div class="tab">Precipitation</div>
+            <div class="tab">Wind</div>
+        </div>
+
+        <div class="graph">
+            <p>Hourly temperature graph placeholder</p>
+        </div>
+
+        <div class="forecast">
+            <h3>7-Day Forecast</h3>
+            <div id="forecast-container"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
